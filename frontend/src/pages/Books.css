@@ -1,0 +1,79 @@
+/* Base styles */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .book {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .book h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .book p {
+    margin-top: 5px;
+  }
+  
+  .book span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .delete,
+  .update {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .delete:hover,
+  .update:hover {
+    background-color: #cc4c35;
+  }
+  
+  .addHome {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #008cba;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .addHome:hover {
+    background-color: #005f75;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .book {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .book {
+      width: calc(100% - 20px);
+    }
+  }
+  

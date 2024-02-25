@@ -1,0 +1,63 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 10px 7px 20px rgb(40, 155, 226);
+  }
+  
+  .form h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .form input[type="email"],
+  .form input[type="password"],
+  .form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .form input[type="submit"] {
+    cursor: pointer;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+  }
+  
+  .form input[type="submit"]:hover {
+    background-color: #005f75;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #008cba;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .form {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .form {
+      width: 90%;
+    }
+  }
+  
