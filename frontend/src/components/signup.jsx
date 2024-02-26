@@ -14,7 +14,7 @@ const Signup = () => {
 
         try{
 
-            await axios.post("https://library-6cmg.onrender.com/signup",{
+            await axios.post("http://localhost:8800/signup",{
                 email,password
             })
             .then(res=>{

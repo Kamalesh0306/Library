@@ -22,7 +22,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://library-6cmg.onrender.com/books", book);
+      await axios.post("http://localhost:8800/books", book);
       navigate("/books");
     } catch (err) {
       console.log(err);
