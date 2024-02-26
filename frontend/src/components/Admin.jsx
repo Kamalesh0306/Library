@@ -10,7 +10,7 @@ const Admin = () => {
     const enteredPassword = document.getElementById('password1').value;
     
     if (enteredEmail === 'xyz@gmail.com' && enteredPassword === 'positivity') {
-      navigate('/home');
+      navigate('/books');
     } else {
       alert('Invalid admin user');
     }

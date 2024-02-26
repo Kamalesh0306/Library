@@ -7,10 +7,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "kamalSan@0306",
-  database: "test",
+  host: "bpse1qhkpsxv2tf03f5g-mysql.services.clever-cloud.com",
+  user: "uvaaiwrul6s32xew",
+  password: "1ku5QBH3riqmxcYnHAxL",
+  database: "bpse1qhkpsxv2tf03f5g"
 });
 
 app.get("/", (req, res) => {
