@@ -26,7 +26,7 @@ const Update = () => {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:8800/books/${bookId}`, book);
+      await axios.put(`https://lib-i3tx.onrender.com/books/${bookId}`, book);
       navigate("/books");
     } catch (err) {
       console.log(err);

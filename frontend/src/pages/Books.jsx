@@ -8,7 +8,7 @@ import "./Books.css";
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/books");
+        const res = await axios.get("https://lib-i3tx.onrender.com/books");
         setBooks(res.data);
       } catch (err) {
         console.log(err);
@@ -21,7 +21,7 @@ import "./Books.css";
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:8800/books/${id}`);
+      await axios.delete(`https://lib-i3tx.onrender.com/books/${id}`);
       window.location.reload()
     } catch (err) {
       console.log(err);
