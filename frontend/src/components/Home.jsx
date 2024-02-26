@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const res = await axios.get("https://library-6cmg.onrender.com//books");
+        const res = await axios.get("https://library-6cmg.onrender.com/books");
         setBooks(res.data);
         setFilteredBooks(res.data); // Initially set filteredBooks to all books
       } catch (err) {
